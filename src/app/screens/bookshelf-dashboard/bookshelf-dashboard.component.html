@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="scanner-grid">
+        <button mat-raised-button color="primary" class="button-form" (click)="getAllBooks()">Fetch Books</button>
+    </div>
+
+    <div class="row align-items-center">
+        <div *ngFor="let book of books" class="col-xs-12 col-sm-6">
+          <mat-card class="dashboard-card target-card">
+            <mat-card-content>
+              <mat-card-header>
+                <mat-card-title class="card-header-title">
+                  <h2>📖 {{book.title}}</h2>
+                </mat-card-title>
+              </mat-card-header>
+              <div class="dashboard-card-content">
+                <p>👤 <b>Author</b> {{ book.author }}</p>
+                <p>📅 <b>Year:</b> {{ book.year }} </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+</div>

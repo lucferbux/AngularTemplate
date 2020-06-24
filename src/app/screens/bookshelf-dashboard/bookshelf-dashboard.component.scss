@@ -1,0 +1,28 @@
+.scanner-grid {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.protocols-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.error-card {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.target-card {
+    padding: 0px 10px 10px 10px !important;
+    margin: 20px;
+}

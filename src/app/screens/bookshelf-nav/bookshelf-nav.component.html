@@ -1,0 +1,19 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content class="sidenav-content">
+    <mat-toolbar class="toolbar-header" color="primary">
+      <span class="toolbar-title">Bookshelf</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <div class="loading-indicator" *ngIf="isLoading">
+        <mat-progress-spinner mode="indeterminate" color="accent"></mat-progress-spinner>
+    </div>
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

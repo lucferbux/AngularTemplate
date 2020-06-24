@@ -1,0 +1,34 @@
+@import '~@angular/material/theming';
+
+.card-reader-body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.mat-icon-text {
+    margin-right: 5px;
+}
+
+:host ::ng-deep.book-card {
+    border-radius: 10px !important;
+    @include mat-elevation(6);
+
+    &:hover {
+        @include mat-elevation(12);
+    }
+}
+
+
+:host ::ng-deep.dashboard-card {
+    border-radius: 10px !important;
+    @include mat-elevation(6);
+
+    &:hover {
+        @include mat-elevation(12);
+    }
+
+    padding: 0px !important;
+    margin-top: 24px !important; 
+}
+  
